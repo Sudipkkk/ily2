@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trial</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Kanit', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: aquamarine;
+        }
+
+        .container1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10%;
+        }
+
+        .container1 h2 {
+            color: rgb(92, 92, 92);
+            font-size: 1.7rem;
+        }
+
+        .container2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .container2 img {
+            width: 400px;
+            border: 2px solid rgb(163, 21, 182);
+        }
+
+        .btn-group {
+            margin: 50px;
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            display: flex;
+            cursor: pointer;
+            margin: 0 70px;
+            padding: 5px 30px;
+            background-color: yellow;
+            border: none;
+            font-size: 1.5rem;
+            border: 1px solid black;
+        }
+
+        .btn-group button a {
+            background: transparent;
+            text-decoration: none;
+            color: rgb(61, 60, 60);
+            font-weight: 500;
+        }
+
+        button:hover {
+            animation: ease-in-out;
+            transition: 0.5s;
+            background-color: rgb(255, 45, 45);
+        }
+
+        .btn-group button a:hover {
+            color: aqua;
+            transition: ease-in-out 0.5s;
+        }
+
+        @media (max-width:680px) {
+            .container1 h2 {
+                font-size: 1.4rem;
+            }
+        }
+
+        @media (max-width:560px) {
+            .container1 h2 {
+                font-size: 1.2rem;
+            }
+
+            .container2 img {
+                width: 300px;
+            }
+        }
+
+        @media (max-width:485px) {
+            .container1 h2 {
+                font-size: 1rem;
+            }
+
+            .container2 img {
+                width: 300px;
+            }
+
+            button {
+                font-size: 1.3rem;
+                margin: 0 50px;
+                padding: 5px 25px;
+
+            }
+        }
+
+        @media (max-width:400px) {
+            .container1 h2 {
+                font-size: 0.7rem;
+            }
+
+            .container2 img {
+                width: 250px;
+            }
+
+            button {
+                font-size: 0.7rem;
+                margin: 0 40px;
+                padding: 5px 15px;
+
+            }
+        }
+
+        .no-btn{
+            color:rgb(61, 60, 60) ;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container1">
+            <h2 class="question">Hey I'm Sudip And I Love you Will You Be Mine Forever :) </h2>
+        </div>
+        <div class="container2">
+            <img src="https://media.tenor.com/s2Uta3Rp9hcAAAAC/glasses-shy.gif" alt="gif">
+        </div>
+        <div class="btn-group">
+            <button class="yes-btn"><a href="index2.html">Yes</a></button>
+            <button class="no-btn" onclick="hideButton(this)">No</button>
+        </div>
+    </div>
+
+    <script>
+       function hideButton(x)
+        {
+            x.style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>

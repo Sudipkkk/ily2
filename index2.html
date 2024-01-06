@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Kanit', sans-serif;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100%;
+            background: linear-gradient(45deg, #d2001a, #7462ff, #f48e21, #23d5ab);
+            background-size: 300% 300%;
+            animation: color 12s ease-in-out infinite;
+        }
+
+        @keyframes color {
+            0% {
+                background-position: 0 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0 50%;
+            }
+        }
+
+        .container1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* margin-top: 10%; */
+            padding-top: 10%;
+        }
+
+        .container1 h2 {
+            color: rgb(92, 92, 92);
+            font-size: 1.7rem;
+        }
+
+        .container2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .container2 img {
+            width: 400px;
+            border: 2px solid rgb(163, 21, 182);
+        }
+
+        @media (max-width:500px){
+            .container1 h2{
+                font-size: 1.5rem;
+            }
+            .container2 img{
+                width: 340px;
+            }
+        }
+
+        @media (max-width:385px){
+            .container1 h2{
+                font-size: 1.2rem;
+            }
+            .container2 img{
+                width: 240px;
+            }
+        }
+
+        @media (max-width:335px){
+            .container1 h2{
+                font-size: 1rem;
+            }
+            .container2 img{
+                width: 200px;
+            }
+        }
+
+        @media (max-width:280px){
+            .container1 h2{
+                font-size: 0.7rem;
+            }
+            .container2 img{
+                width: 150px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="container1">
+            <h2 class="question">Yaaayyy Letsss Goooooo ^ ^ &#128518; &#128150; </h2>
+        </div>
+        <div class="container2">
+            <img src="https://gifdb.com/images/high/happy-anime-boy-smiling-gmyxmcvze1eaa5f3.gif" alt="gif">
+        </div>
+    </div>
+</body>
+
+</html>
